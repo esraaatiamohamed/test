@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../css/all.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- css style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- fav icon -->
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAEAKPAA4DjgAPBq8AEASSAA8FpgATCeUAFAnlABUJ5QASCuQADwalAAAAAQAPBrAAAQABAAABAAABAQAAEgnmABMJ5gAVCuUAGg/fABAFsgAPBrEAAQEBABkN4gAPA5MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADxUUABYJCAsAAAAAAAAAAA8VFQAXBgYLAAAAAAAAAAAPFRUOBgYYCwAAAAAAAAAADxUVCwYGAwsAAAAAAAAAAA8VAxAGBxULAAAAAAAAAAAPFQoGBgIVCwAAAAAAAAAADxUBBhIFFQsAAAAAAAAAAA8VBwYRDBULAAAAAAAAAAAPDAYGABUVCwAAAAAAAAAADwQGBgAVFQsAAAAAAAAAAA8GBhMAFRULAAAAAAAAAAANBgYNABUVCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!--Jquery-->
+<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+<script type="text/javascript" src="js/lightslider.js"></script>
+    <title>Netflix</title>
+</head>
+<body>
+    <!-- 
+        sm
+        md
+        lg
+        xl
+    -->
+
+    <!--===(navigation)=================== -->
+    <nav class="navigation">
+        <!-- menu btn  -------->
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+        <!-- logo ------------->
+        <a href="index.html" class="logo" >NETFLEX.</a>
+        <!-- menu ------------->
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Serios</a></li>
+            <li><a href="#">My list</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- search box -->
+        <form action="" class="search-box">
+            <!-- input -->
+            <input type="text" name="search" placeholder="Search Movie" class="search input" required/>
+            <!-- btn -->
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </nav>
+    <!-- nav end -->
+
+
+
+
+<!--  home start -->
+
+<section class="home" id="home">
+    
+    <!-- <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+                <div class="col-lg-4 col-md-6 col-sm-2 ml-3">
+                    <a class="navbar-brand" href="#home"><img src="../img/logo.png" class="logo" alt=""></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="col-lg-6 col-md-6 col-sm-10">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Serios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            My list
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-2 col-sm-5">
+                    <div class="icons">
+                        <a href="" class="search mr-5"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="" class="bell m-1"><i class="fa-solid fa-bell"></i></a>
+                    </div>
+                </div>
+            </nav>
+            
+        </div>
+    </div> -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/home-1.jpg" class="d-block w-100" alt="..." height="700PX" style="filter: brightness(0.5);">
+                <div class="container">
+                    <div class="row">
+                        <div class="carousel-caption d-md-block">
+                            <div class="text-1 col-lg-9 col-md-12 col-sm-12">
+                                <div class="evaluation">
+                                    <h3><i class="fa-solid fa-star"></i> 6.5
+                                        <span>action | adventure | fantasy</span>
+                                    </h3>
+                                </div>
+                                <div class="title">
+                                    <h1>Rampage</h1>
+                                </div>
+                                <p>Some representative placeholder content for the first slide.<br>
+                                    Some representative placeholder content for the first slide.</p>
+                                <div class="button">
+                                    <button class="btn btn-danger">
+                                        <span class="mr-2"><i class="fa-solid fa-play"></i></span>Watch
+                                    </button>
+                                    <button class="btn btn-dark" style="background: #000;">
+                                        <span class="mr-2"><i class="fa-solid fa-plus"></i></span>add list
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/home-2.jpg" class="d-block w-100" alt="..." height="700PX" style="filter: brightness(0.5);">
+                <div class="container">
+                    <div class="row">
+                        <div class="carousel-caption d-md-block">
+                            <div class="text-1 col-lg-9 col-md-12 col-sm-12">
+                                <div class="evaluation">
+                                    <h3><i class="fa-solid fa-star"></i> 4.5
+                                        <span>action | adventure | fantasy</span>
+                                    </h3>
+                                </div>
+                                <div class="title">
+                                    <h1>the maze runner</h1>
+                                </div>
+                                <p>Some representative placeholder content for the first slide.<br>
+                                    Some representative placeholder content for the first slide.</p>
+                                <div class="button">
+                                    <button class="btn btn-danger">
+                                        <span class="mr-2"><i class="fa-solid fa-play"></i></span>Watch
+                                    </button>
+                                    <button class="btn btn-dark" style="background: #000;">
+                                        <span class="mr-2"><i class="fa-solid fa-plus"></i></span>add list
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/home-3.jpg" class="d-block w-100" alt="..." height="700PX" style="filter: brightness(0.5);">
+                <div class="container">
+                    <div class="row">
+                        <div class="carousel-caption d-md-block">
+                            <div class="text-1 col-lg-9 col-md-12 col-sm-12">
+                                <div class="evaluation">
+                                    <h3><i class="fa-solid fa-star"></i> 10.5
+                                        <span>action | adventure | fantasy</span></h3>
+                                </div>
+                                <div class="title"><h1>The Vampire Diaries</h1></div>
+                                <p>Some representative placeholder content for the first slide.<br>
+                                    Some representative placeholder content for the first slide.</p>
+                                <div class="button">
+                                    <button class="btn btn-danger">
+                                        <span class="mr-2"><i class="fa-solid fa-play"></i></span>Watch
+                                    </button>
+                                    <button class="btn btn-dark" style="background: #000;">
+                                        <span class="mr-2"><i class="fa-solid fa-plus"></i></span>add list
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+</section>
+<!--  home end -->
+
+
+
+
+
+<!-- ==== trends ====== -->
+<div class="trends">
+    <h2><i class="fa-solid fa-arrow-trend-up"></i> Trends Now</h2>
+</div>
+
+
+    <!-- slider -->
+    <section id="main-slider">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+            <!-- slide-1 ------------------------>
+            <div class="swiper-slide">
+                <!-- box -->
+                <div class="main-slider-box">
+                    <!-- img -->
+                    <div class="main-slider-img">
+                        <img src="../img/slider-1.jpeg" class="sl-im" alt="poster">
+                    </div>
+                    <!-- text -->
+                    <div class="main-slider-text">
+                        <!-- bottom text -->
+                        <div class="bottom-text">
+                            <!-- name -->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <strong>Paranormal Activity: The Marked Ones</strong>
+                            </div>
+                            <!-- catygory-and-rating -->
+                            <div class="catygory-rating">
+                                <!-- catygory -->
+                                <div class="catygory">
+                                    <a href="">Horro</a>,<a href="">Mistery</a>,<a href="">thriller</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- slide-2 ------------------------>
+            <div class="swiper-slide">
+                <!-- box -->
+                <div class="main-slider-box">
+                    <!-- img -->
+                    <div class="main-slider-img">
+                        <img src="../img/slider-2.jpeg" class="sl-im" alt="poster">
+                    </div>
+                    <!-- text -->
+                    <div class="main-slider-text">
+                        <!-- bottom text -->
+                        <div class="bottom-text">
+                            <!-- name -->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <strong>Paranormal Activity: The Marked Ones</strong>
+                            </div>
+                            <!-- catygory-and-rating -->
+                            <div class="catygory-rating">
+                                <!-- catygory -->
+                                <div class="catygory">
+                                    <a href="">Horro</a>,<a href="">Mistery</a>,<a href="">thriller</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- slide-3 ------------------------>
+            <div class="swiper-slide">
+                <!-- box -->
+                <div class="main-slider-box">
+                    <!-- img -->
+                    <div class="main-slider-img">
+                        <img src="../img/slider-3.jpeg" class="sl-im" alt="poster">
+                    </div>
+                    <!-- text -->
+                    <div class="main-slider-text">
+                        <!-- bottom text -->
+                        <div class="bottom-text">
+                            <!-- name -->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <strong>Paranormal Activity: The Marked Ones</strong>
+                            </div>
+                            <!-- catygory-and-rating -->
+                            <div class="catygory-rating">
+                                <!-- catygory -->
+                                <div class="catygory">
+                                    <a href="">Horro</a>,<a href="">Mistery</a>,<a href="">thriller</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- slide-4 ------------------------>
+            <div class="swiper-slide">
+                <!-- box -->
+                <div class="main-slider-box">
+                    <!-- img -->
+                    <div class="main-slider-img">
+                        <img src="../img/slider-4.jpeg" class="sl-im" alt="poster">
+                    </div>
+                    <!-- text -->
+                    <div class="main-slider-text">
+                        <!-- bottom text -->
+                        <div class="bottom-text">
+                            <!-- name -->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <strong>Paranormal Activity: The Marked Ones</strong>
+                            </div>
+                            <!-- catygory-and-rating -->
+                            <div class="catygory-rating">
+                                <!-- catygory -->
+                                <div class="catygory">
+                                    <a href="">Horro</a>,<a href="">Mistery</a>,<a href="">thriller</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- slide-5 ------------------------>
+            <div class="swiper-slide">
+                <!-- box -->
+                <div class="main-slider-box">
+                    <!-- img -->
+                    <div class="main-slider-img">
+                        <img src="../img/slider-5.jpeg" class="sl-im" alt="poster">
+                    </div>
+                    <!-- text -->
+                    <div class="main-slider-text">
+                        <!-- bottom text -->
+                        <div class="bottom-text">
+                            <!-- name -->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <strong>Paranormal Activity: The Marked Ones</strong>
+                            </div>
+                            <!-- catygory-and-rating -->
+                            <div class="catygory-rating">
+                                <!-- catygory -->
+                                <div class="catygory">
+                                    <a href="">Horro</a>,<a href="">Mistery</a>,<a href="">thriller</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- slide-6 ------------------------>
+            <div class="swiper-slide">
+                <!-- box -->
+                <div class="main-slider-box">
+                    <!-- img -->
+                    <div class="main-slider-img">
+                        <img src="../img/slider-6.jpeg" class="sl-im" alt="poster">
+                    </div>
+                    <!-- text -->
+                    <div class="main-slider-text">
+                        <!-- bottom text -->
+                        <div class="bottom-text">
+                            <!-- name -->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <strong>Paranormal Activity: The Marked Ones</strong>
+                            </div>
+                            <!-- catygory-and-rating -->
+                            <div class="catygory-rating">
+                                <!-- catygory -->
+                                <div class="catygory">
+                                    <a href="">Horro</a>,<a href="">Mistery</a>,<a href="">thriller</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- slide-7 ------------------------>
+            <div class="swiper-slide">
+                <!-- box -->
+                <div class="main-slider-box">
+                    <!-- img -->
+                    <div class="main-slider-img">
+                        <img src="../img/slider-7.jpeg" class="sl-im" alt="poster">
+                    </div>
+                    <!-- text -->
+                    <div class="main-slider-text">
+                        <!-- bottom text -->
+                        <div class="bottom-text">
+                            <!-- name -->
+                            <div class="movie-name">
+                                <span>2022</span>
+                                <strong>Paranormal Activity: The Marked Ones</strong>
+                            </div>
+                            <!-- catygory-and-rating -->
+                            <div class="catygory-rating">
+                                <!-- catygory -->
+                                <div class="catygory">
+                                    <a href="">Horro</a>,<a href="">Mistery</a>,<a href="">thriller</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- btns ------------>
+        <div class="slider-btns">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!-- slider end  -->
+
+    <!--=== main-section-start =========-->
+
+        <section class="main-section">
+            <div class="section-container">
+                <div class="left-column">
+                    <h1>Enjoy on your TV.</h1>
+                    <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
+                </div>
+                <div class="right-column">
+                    <img src="../img/tv.png" alt="">
+                    <video class="video-1" autoplay playsinline="" muted="" loop>
+                        <source src="../video/video-tv-0819.m4v" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+                    <!-- DOWNLOAD YOU SHOW TO WATCH OFFLINE -->
+        <div class="section2-container">
+            <div class="right-column">
+                <h1>Download your shows to watch offline.</h1>
+                <h3>Save your favorites easily and always have something to watch.</h3>
+            </div>
+            <div class="left-column">
+                <img src="../img/download.jpg">
+                <div class="box">
+                    <img class="boxshot" src="../img/boxshot.png">
+                    <p>
+                        Stranger Things
+                        <br>
+                        <a href="#">Downloading...</a>
+                    </p>
+                    <img class="download-gif" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif">
+                </div>
+            </div>
+
+        </div>
+        <!-- WATCH EVERY WHERE -->
+        <div class="section-container">
+            <div class="left-column">
+                <h1>Watch everywhere.</h1>
+                <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h3>
+            </div>
+            <div class="right-column">
+                <img src="../img/computer.png">
+                <video class="video-2" autoplay="" playsinline="" muted="" loop="">
+                    <source src="../video/video2.m4v" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <!-- CREATE PROFILE FOR KIDS -->
+        <div style="padding-top: 50px;" class="section2-container">
+
+            <div class="right-column">
+                <h1>Create profiles for kids.</h1>
+                <h3>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</h3>
+            </div>
+            <div class="left-column">
+                <img src="../img/create_profile.png">
+            </div>
+        </div>
+        </section>
+
+
+    <!--=== main-section-end =========-->
+
+
+
+
+
+
+
+    <!-- QUESTION SECTION STARTS -->
+    <section class="question-container">
+        <h1>Frequently Asked Questions</h1>
+        <!-- QUESTION 1 -->
+            <button id="question1" type="button">
+                What is Netflix?
+                <img src="../img/plus.png">
+            </button>
+            <div id="answer1" class="answer1">
+                <p>
+                    Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                    <br><br>
+                    You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                </p>
+            </div>
+            <br>
+            <!-- QUESTION 2 -->
+            <button id="question2" type="button">
+                How much does Netflix cost?
+                <img src="../img/plus.png">
+            </button>
+            <div id="answer2" class="answer2">
+                <p>
+                    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from USD7.99 to USD14.99 a month. No extra costs, no contracts.
+                </p>
+            </div>
+            <br>
+            <!-- QUESTION 3 -->
+            <button id="question3" type="button">
+                Where can I watch?
+                <img src="../img/plus.png">
+            </button>
+            <div id="answer3" class="answer3">
+                <p>
+                    Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                    <br><br>
+                    You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </p>
+            </div>
+            <br>
+            <!-- QUESTION 4 -->
+            <button id="question4" type="button">
+                How do I cancel?
+                <img src="../img/plus.png">
+            </button>
+            <div id="answer4" class="answer4">
+                <p>
+                    Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                </p>
+            </div>
+            <br>
+            <!-- QUESTION 5 -->
+            <button id="question5" type="button">
+                What can I watch on Netflix?
+                <img src="../img/plus.png">
+            </button>
+            <div id="answer5" class="answer5">
+                <p>
+                    Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                </p>
+            </div>
+            <br>
+            <!-- QUESTION 6 -->
+            <button id="question6" type="button">
+                Is Netflix good for kids?
+                <img src="../img/plus.png">
+            </button>
+            <div id="answer6" class="answer6">
+                <p>
+                    The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
+                    <br><br>
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                </p>
+            </div>
+    </section>
+    <!-- QUESTION SECTION ENDS -->
+
+    <!-- EMAIL ADDRESS STARTS-->
+    <div class="email-address-container">
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <input type="text" name="email" placeholder="Email Address">
+            <button type="submit">Get Started ></button>
+    </div>
+    <!-- EMAIL ADDRESS ENDS-->
+
+
+    <!-- FOOTER SECTION STARTS -->
+    <footer>
+        <h5 class="pt-2">Questions? Contact us.</h5>
+        <div class="content">
+            <div class="boxs">
+                <div class="middle box">
+                    <div><a href="#">FAQ</a></div>
+                    <div><a href="#">Account</a></div>
+                    <div><a href="#">Cookie Preferences</a></div>
+                    <div><a href="#">Investor Relations</a></div>
+                    <div><a href="#">Privacy</a></div>
+                    <div><a href="#">Mobile Application Design</a></div>
+                    <div><a href="#">Speed Test</a></div>
+                    <div><a href="#">Only on Netflix</a></div>
+                </div>
+                
+                <div class="middle box">
+                    <div><a href="#">Help Center</a></div>
+                    <div><a href="#">Jobs</a></div>
+                    <div><a href="#">Media Center</a></div>
+                    <div><a href="#">Terms of Use</a></div>
+                    <div><a href="#">Contact Us</a></div>
+                    <div><a href="#">Legal Notices</a></div>
+                    <div><a href="#">Ways to Watch</a></div>
+                </div>
+            </div>
+
+            <div class="option">
+                <select>
+                    <option value="/kw-en/">English</option>
+                    <option value="/kw/">العربية</option>
+                </select>
+                <br><br>
+                <p>Netflix Kuwait</p>
+            </div>
+            </div>
+
+    </footer>
+    <!-- FOOTER SECTION ENDS -->
+
+
+
+
+    <!-- ==== footer ===== -->
+    <footer class="footer-end">
+        <a href="index.html" class="logo">NETFLEX</a>
+        <!-- copyright -->
+        <span class="copyright">
+            copyright 2022 -GoingToInternet
+        </span>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="../js/jquery.js"></script>
+    <!-- bootstrap links -->
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <!-- js link -->
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
